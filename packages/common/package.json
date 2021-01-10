@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/common",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "mey-sdk-js common library",
   "main": "dist/mey-sdk-js-common.cjs.js",
   "module": "dist/mey-sdk-js-common.esm.js",
