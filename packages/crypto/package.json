@@ -1,0 +1,51 @@
+{
+  "name": "@mey-sdk-js/crypto",
+  "version": "0.3.11",
+  "description": "Cryptography tools for MeyCoin Platform",
+  "main": "dist/mey-sdk-js-crypto.cjs.js",
+  "module": "dist/mey-sdk-js-crypto.esm.js",
+  "browser": "dist/mey-sdk-js-crypto.umd.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn run type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "build": "yarn run build:types && yarn run build:js",
+    "release": "bash release.sh",
+    "lint": "eslint --fix src/**/*.ts test/**/*.ts",
+    "test": "yarn run lint && yarn run type-check && nyc mocha -r babel-register-ts test/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meycoin/mey-sdk-js-crypto.git"
+  },
+  "author": {
+    "name": "Wesoha",
+    "email": "wesoha.ts@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meycoin/mey-sdk-js-crypto/issues"
+  },
+  "homepage": "https://github.com/meycoin/mey-sdk-js-crypto#readme",
+  "dependencies": {
+    "@mey-sdk-js/common": "^0.3.2",
+    "@mey-sdk-js/hdkey": "^0.3.2",
+    "@types/elliptic": "^6.4.0",
+    "aes-js": "^3.1.1",
+    "asmcrypto.js": "^2.3.2",
+    "bip39": "^3.0.2",
+    "elliptic": "^6.4.1",
+    "jsbi": "^3.0.0",
+    "scrypt-async-modern": "^3.0.12"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0",
+    "rollup-plugin-ignore": "^1.0.5",
+    "rollup-plugin-terser": "^5.1.1"
+  },
+  "gitHead": "64af5f569f35b753e11173a7db83318913527a1c"
+}

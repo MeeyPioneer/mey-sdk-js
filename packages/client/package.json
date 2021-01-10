@@ -1,0 +1,49 @@
+{
+  "name": "@mey-sdk-js/client",
+  "version": "0.3.11",
+  "description": "Javascript client for MeyCoin Framework",
+  "main": "dist/mey-sdk-js.common.js",
+  "module": "dist/mey-sdk-js.esm.js",
+  "browser": "dist/mey-sdk-js.js",
+  "types": "dist/platforms/node/index.d.ts",
+  "scripts": {
+    "test:ts": "run(){ nyc mocha --exit -r babel-register-ts ${1-'test/*.ts'}; }; run",
+    "test": "yarn run lint && yarn run type-check && yarn run test:ts",
+    "dev": "rollup -w -c scripts/config.js --environment TARGET:node-esm",
+    "lint": "eslint --fix src/**/*.ts test/**/*.ts",
+    "grpc": "./scripts/gen_proto.sh",
+    "release": "bash scripts/release.sh",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel-node scripts/build.js",
+    "build": "yarn run build:types && yarn run build:js",
+    "docs": "cd docs && make html",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn run type-check -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meycoin/mey-sdk-js.git"
+  },
+  "author": {
+    "name": "Wesoha",
+    "email": "wesoha.ts@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meycoin/mey-sdk-js/issues"
+  },
+  "homepage": "https://github.com/meycoin/mey-sdk-js#readme",
+  "dependencies": {
+    "@improbable-eng/grpc-web": "^0.9.1",
+    "@mey-sdk-js/common": "^0.3.2",
+    "@types/google-protobuf": "^3.2.7",
+    "google-protobuf": "^3.6.0",
+    "grpc": "^1.13.1",
+    "hash.js": "^1.1.7",
+    "jsbi": "^3.0.0"
+  },
+  "devDependencies": {
+    "@improbable-eng/grpc-web-node-http-transport": "^0.9.1"
+  },
+  "gitHead": "64af5f569f35b753e11173a7db83318913527a1c"
+}

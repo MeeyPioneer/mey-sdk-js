@@ -1,0 +1,3 @@
+[submodule "mey-protobuf"]
+	path = mey-protobuf
+	url = https://github.com/meycoin/mey-protobuf.git

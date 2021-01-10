@@ -1,0 +1,46 @@
+{
+  "name": "@mey-sdk-js/mey-ledger-app",
+  "version": "0.3.11",
+  "description": "MeyCoin Ledger App",
+  "main": "dist/mey-sdk-js.cjs.js",
+  "module": "dist/mey-sdk-js.esm.js",
+  "browser": "dist/mey-sdk-js.umd.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn run type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "build": "yarn run lint && yarn run build:types && yarn run build:js",
+    "release": "bash release.sh",
+    "lint": "eslint --fix src/**/*.ts test/**/*.ts",
+    "test": "yarn run lint && yarn run type-check && nyc mocha -r babel-register-ts test/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meycoin/mey-sdk-js.git"
+  },
+  "author": {
+    "name": "Wesoha",
+    "email": "wesoha.ts@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meycoin/mey-sdk-js/issues"
+  },
+  "homepage": "https://github.com/meycoin/mey-sdk-js#readme",
+  "dependencies": {
+    "@mey-sdk-js/client": "^0.3.2",
+    "@mey-sdk-js/common": "^0.3.2",
+    "@mey-sdk-js/crypto": "^0.3.2"
+  },
+  "devDependencies": {
+    "@ledgerhq/hw-transport": "^5.9.0",
+    "@ledgerhq/hw-transport-node-hid": "^5.10.0",
+    "@types/ledgerhq__hw-transport-node-hid": "^4.22.1",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0"
+  },
+  "gitHead": "64af5f569f35b753e11173a7db83318913527a1c"
+}

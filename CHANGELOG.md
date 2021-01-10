@@ -1,0 +1,11 @@
+## 1.0.0 (November 23, 2020)
+- Client
+  - Initial npm release
+- Crypto
+  - Initial npm release
+- Wallet
+  - Initial npm release
+- Vue Plugin
+  - Initial npm release
+- MeyCoin Ledger App
+  - Initial npm release
