@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/vue-plugin",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Add MeyCoin controller to your Vue.js project",
   "main": "plugin.js",
   "scripts": {},
@@ -10,8 +10,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@mey-sdk-js/client": "^0.3.2",
-    "@mey-sdk-js/wallet": "^0.3.2"
+    "@mey-sdk-js/client": "^0.3.12",
+    "@mey-sdk-js/wallet": "^0.3.12"
   },
   "gitHead": "64af5f569f35b753e11173a7db83318913527a1c"
 }

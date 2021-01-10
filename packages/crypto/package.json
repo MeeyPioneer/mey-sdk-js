@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/crypto",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Cryptography tools for MeyCoin Platform",
   "main": "dist/mey-sdk-js-crypto.cjs.js",
   "module": "dist/mey-sdk-js-crypto.esm.js",
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/meycoin/mey-sdk-js-crypto#readme",
   "dependencies": {
-    "@mey-sdk-js/common": "^0.3.2",
-    "@mey-sdk-js/hdkey": "^0.3.2",
+    "@mey-sdk-js/common": "^0.3.12",
+    "@mey-sdk-js/hdkey": "^0.3.12",
     "@types/elliptic": "^6.4.0",
     "aes-js": "^3.1.1",
     "asmcrypto.js": "^2.3.2",

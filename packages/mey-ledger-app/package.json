@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/mey-ledger-app",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "MeyCoin Ledger App",
   "main": "dist/mey-sdk-js.cjs.js",
   "module": "dist/mey-sdk-js.esm.js",
@@ -30,9 +30,9 @@
   },
   "homepage": "https://github.com/meycoin/mey-sdk-js#readme",
   "dependencies": {
-    "@mey-sdk-js/client": "^0.3.2",
-    "@mey-sdk-js/common": "^0.3.2",
-    "@mey-sdk-js/crypto": "^0.3.2"
+    "@mey-sdk-js/client": "^0.3.12",
+    "@mey-sdk-js/common": "^0.3.12",
+    "@mey-sdk-js/crypto": "^0.3.12"
   },
   "devDependencies": {
     "@ledgerhq/hw-transport": "^5.9.0",

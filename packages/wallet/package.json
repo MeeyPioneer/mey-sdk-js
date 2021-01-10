@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/wallet",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "SDK for making MeyCoin Wallet applications",
   "scripts": {
     "type-check": "tsc --noEmit",
@@ -24,10 +24,10 @@
   "license": "MIT",
   "dependencies": {
     "@elderapo/typed-event-emitter": "^1.4.1",
-    "@mey-sdk-js/client": "^0.3.2",
-    "@mey-sdk-js/common": "^0.3.2",
-    "@mey-sdk-js/crypto": "^0.3.2",
-    "@mey-sdk-js/mey-ledger-app": "^0.3.2",
+    "@mey-sdk-js/client": "^0.3.12",
+    "@mey-sdk-js/common": "^0.3.12",
+    "@mey-sdk-js/crypto": "^0.3.12",
+    "@mey-sdk-js/mey-ledger-app": "^0.3.12",
     "@types/google-protobuf": "^3.2.7",
     "@types/hashmap": "^2.0.29",
     "@types/leveldown": "^4.0.0",

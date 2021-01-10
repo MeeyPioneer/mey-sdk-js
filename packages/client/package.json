@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/client",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Javascript client for MeyCoin Framework",
   "main": "dist/mey-sdk-js.common.js",
   "module": "dist/mey-sdk-js.esm.js",
@@ -35,7 +35,7 @@
   "homepage": "https://github.com/meycoin/mey-sdk-js#readme",
   "dependencies": {
     "@improbable-eng/grpc-web": "^0.9.1",
-    "@mey-sdk-js/common": "^0.3.2",
+    "@mey-sdk-js/common": "^0.3.12",
     "@types/google-protobuf": "^3.2.7",
     "google-protobuf": "^3.6.0",
     "grpc": "^1.13.1",

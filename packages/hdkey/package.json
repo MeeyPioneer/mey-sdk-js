@@ -1,6 +1,6 @@
 {
   "name": "@mey-sdk-js/hdkey",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Bitcoin BIP32 hierarchical deterministic keys",
   "main": "lib/hdkey.js",
   "types": "lib/hdkey.d.ts",
